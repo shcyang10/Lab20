@@ -1,0 +1,31 @@
+-- select * from northwind.customers;
+-- select distinct country from customers;
+-- select * from customers where customerID='BL';
+-- select * from orders limit 100;
+-- select * from customers where postalcode=1010;
+-- select * from customers where postalcode=3012;
+-- select * from customers where postalcode=12209;
+-- select * from customers where postalcode=05023;
+-- select * from orders where ShipRegion != null;
+-- select * from customers order by country, city;
+-- insert into customers (customerID, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax)
+-- values ('Skt', 'Skt Telecom', 'Sean Yang', 'Sales Agent', '1414 StreetWay', 'Gaylord', 'MI', '49735', 'USA', '(555)-555-5555', '(555)-555-5555');
+-- update orders
+-- set ShipRegion='EuroZone' where shipcountry='France';
+-- delete from `order details` where quantity=1;
+-- select avg(quantity) from `order details`;
+-- select max(quantity) from `order details`;
+-- select min(quantity) from `order details`;
+-- select avg(quantity), max(quantity), min(quantity), orderId from `order details` group by orderID;
+-- select customerID from orders where orderID=10290;
+-- select orders.OrderID, customers.CustomerID
+-- from orders 
+-- inner join customers on orders.CustomerID = customers.CustomerID;
+-- select orders.OrderID, customers.CustomerID
+-- from orders 
+-- left join customers on orders.CustomerID = customers.CustomerID;
+-- select orders.OrderID, customers.CustomerID
+-- from orders 
+-- right join customers on orders.CustomerID = customers.CustomerID;
+-- select firstname from employees where ReportsTo is null;
+-- select firstname from employees where ReportsTo='2';
